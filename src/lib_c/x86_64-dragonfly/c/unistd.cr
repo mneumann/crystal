@@ -16,7 +16,6 @@ lib LibC
   fun dup2(x0 : Int, x1 : Int) : Int
   fun _exit(x0 : Int) : NoReturn
   fun execvp(x0 : Char*, x1 : Char**) : Int
-  fun fdatasync(fd : Int) : Int
   @[ReturnsTwice]
   fun fork : PidT
   fun fsync(fd : Int) : Int
