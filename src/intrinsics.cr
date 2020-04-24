@@ -97,6 +97,10 @@ module Intrinsics
     LibIntrinsics.bswap32(id)
   end
 
+  def self.bswap16(id)
+    LibIntrinsics.bswap16(id)
+  end
+
   def self.popcount8(src)
     LibIntrinsics.popcount8(src)
   end
