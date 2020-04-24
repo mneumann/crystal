@@ -20,9 +20,9 @@ lib LibC
   PF_LOCAL       = LibC::AF_LOCAL
   AF_INET        =  2
   AF_INET6       = 28
-  AF_UNIX        =  1
+  AF_UNIX        = LibC::AF_LOCAL
   AF_UNSPEC      =  0
-  AF_LOCAL       = LibC::AF_UNIX
+  AF_LOCAL       =  1
   SHUT_RD        =          0
   SHUT_RDWR      =          2
   SHUT_WR        =          1

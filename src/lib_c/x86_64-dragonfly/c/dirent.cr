@@ -6,21 +6,11 @@ lib LibC
   DT_DIR = 4
 
   struct Dirent
-    {% if flag?(:freebsd11) %}
-      d_fileno : UInt
-    {% else %}
-      d_fileno : ULong
-      d_off : ULong
-    {% end %}
-    d_reclen : UShort
+    d_fileno : InoT
+    d_namlen : UShort
     d_type : UChar
-    {% if flag?(:freebsd11) %}
-      d_namlen : UChar
-    {% else %}
-      d_pad0 : UChar
-      d_namlen : UShort
-      d_pad1 : UShort
-    {% end %}
+    d_unused1 : UChar
+    d_unused2 : UInt
     d_name : StaticArray(Char, 256)
   end
 

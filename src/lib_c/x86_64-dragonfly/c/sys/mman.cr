@@ -11,16 +11,16 @@ lib LibC
   MAP_ANON              = 0x1000
   MAP_ANONYMOUS         = LibC::MAP_ANON
   MAP_FAILED            = Pointer(Void).new(-1)
-  POSIX_MADV_DONTNEED   = 4
-  POSIX_MADV_NORMAL     = 0
-  POSIX_MADV_RANDOM     = 1
-  POSIX_MADV_SEQUENTIAL = 2
-  POSIX_MADV_WILLNEED   = 3
-  MADV_DONTNEED         = 4
+  POSIX_MADV_NORMAL     = LibC::MADV_NORMAL
+  POSIX_MADV_RANDOM     = LibC::MADV_RANDOM
+  POSIX_MADV_SEQUENTIAL = LibC::MADV_SEQUENTIAL
+  POSIX_MADV_WILLNEED   = LibC::MADV_WILLNEED
+  POSIX_MADV_DONTNEED   = LibC::MADV_DONTNEED
   MADV_NORMAL           = 0
   MADV_RANDOM           = 1
   MADV_SEQUENTIAL       = 2
   MADV_WILLNEED         = 3
+  MADV_DONTNEED         = 4
 
   fun mmap(x0 : Void*, x1 : SizeT, x2 : Int, x3 : Int, x4 : Int, x5 : OffT) : Void*
   fun mprotect(x0 : Void*, x1 : SizeT, x2 : Int) : Int

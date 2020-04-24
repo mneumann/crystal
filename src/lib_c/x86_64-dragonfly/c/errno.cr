@@ -54,14 +54,14 @@ lib LibC
   ENOTCONN        = 57
   ENOTDIR         = 20
   ENOTEMPTY       = 66
-  ENOTRECOVERABLE = 95
+#  ENOTRECOVERABLE = 95
   ENOTSOCK        = 38
   ENOTSUP         = LibC::EOPNOTSUPP
   ENOTTY          = 25
   ENXIO           =  6
   EOPNOTSUPP      = 45
   EOVERFLOW       = 84
-  EOWNERDEAD      = 96
+#  EOWNERDEAD      = 96
   EPERM           =  1
   EPIPE           = 32
   EPROTO          = 92

@@ -31,6 +31,7 @@ lib LibC
   fun tzset : Void
   fun timegm(x0 : Tm*) : TimeT
 
-  fun timezone(x0 : Int, x1 : Int) : Char*
+  $daylight : Int
+  $timezone : Long
   $tzname : Char**
 end
